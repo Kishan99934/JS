@@ -1,0 +1,70 @@
+function reverse(s){
+     
+	return String(s).split("").reverse().join("");
+ 
+}
+
+var temp = reverse("Kishan");
+temp;
+alert(temp);
+
+==========================================
+Fibonacci
+==========================================
+//return fibo; 
+
+
+
+function fiba(n) {
+    var a = 0, b = 1, f = 1;
+    for(var i = 2; i <= n; i++) {
+        f = a + b;
+        a = b;
+        b = f;
+    }
+   console.log(f);
+}
+
+
+ans =>1+1+2+3+5+8
+
+
+===================
+Factoria
+===================
+ function factorial(n){
+ 	if(n<=0)
+ 		return 1;
+ 	else
+ 		return n*factorial(n-1);
+ }
+
+implemtation
+
+factorial(3);
+=>6
+
+===================
+
+function GreatestCommonDivisor(p, q) {
+ 	if (q == 0) 
+	{
+		return p;
+	}
+ 	else return GreatestCommonDivisor(q, p % q);
+}
+
+gcd(4,2);
+
+
+ans=>2
+
+
+===========================
+LCM
+==================
+function LeastCommonMultiple(x, y)
+{
+     return x * (y / GreatestCommonDivisor(x, y));
+}
+
